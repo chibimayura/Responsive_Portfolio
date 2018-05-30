@@ -1,46 +1,57 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-	<title>Contact Page of Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ashley Luk</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<!-- Header -->
-	<div class="headerBorder">
-		<div id="header">
-			<h1>Ashley Luk</h1>
-			<nav>
-				<a href="./index.html" name="about" class="navi">About</a>
-				<div id="divider"></div>
-				<a href="#" name="portfolio" class="navi">Portfolio</a>
-				<div id="divider"></div>
-				<a href="./contact.html" name="contact" class="navi">Contact</a>
-			</nav>
-		</div>
-	</div>
 
-	<!-- Content -->
-	<div class="contentContainer">
-		<h2>Contact</h2>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ashley Luk</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-		<label>Name</label>
-		<input type="text" name="fullname">
-		<label>Email</label>
-		<input type="text" name="email">
-		<label>Message</label>
-		<form type="text" name="message">
-			<textarea></textarea>
-		</form>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-		<button>Submit</button>
-	</div>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-	<!-- Footer -->
-	<div>
-		<footer>
-			copyright &copy;
-		</footer>
-	</div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; Ashley Luk
+    </div>
+  </footer>
 </body>
+
 </html>
